@@ -1,0 +1,7 @@
+#!/usr/bin/python
+
+name = input("Enter your name:")
+
+print()
+
+print("Hello, " + name)
