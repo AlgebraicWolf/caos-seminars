@@ -25,7 +25,8 @@ main:
   mov sp, x29
   // Restore fp, sp and free the memory
   ldp x29, x30, [sp], 16
-  // Exit
+  // Exit with return code 0
+  mov w0, 0
   ret
 
 .data
