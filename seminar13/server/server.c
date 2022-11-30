@@ -33,10 +33,10 @@ int main(int argc, const char *argv[]) {
     int num = 0;
 
     char addr_str [INET_ADDRSTRLEN] = {}; //  Buffer for string representation of address
-    inet_ntop(AF_INET,
-              &client_addr.sin_addr,
-              addr_str,
-              sizeof(addr_str)
+    inet_ntop(AF_INET,               // Domain
+              &client_addr.sin_addr, // Pointer to address
+              addr_str,              // Pointer to address string buffer
+              sizeof(addr_str)       // Buffer size
         );
 
     for (int i = 0; i < 3; i++) {
